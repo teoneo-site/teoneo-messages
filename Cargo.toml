@@ -1,0 +1,16 @@
+[package]
+name = "site-messages"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+dotenv = "0.15.0"
+futures-lite = "2.6.0"
+lapin = "3.0.0"
+lettre = { git = "https://github.com/lettre/lettre", features = ["tokio1", "tokio1-native-tls"]}
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.45.1", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
